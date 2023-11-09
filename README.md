@@ -14,3 +14,14 @@ This project is a Go programming language-based program that allows you to creat
 - **Deck Loading:** Load a saved deck from a file and continue working with it.
 
 The project includes functions for creating, shuffling, dealing, saving, and loading decks, providing a simple and user-friendly interface for card management.
+
+## Installation
+
+To get started with this project, you can follow these steps:
+
+   ```bash
+   git clone https://github.com/Polovichok/cards.git
+   cd cards
+   go run main.go deck.go
+
+
