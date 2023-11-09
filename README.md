@@ -23,5 +23,34 @@ To get started with this project, you can follow these steps:
    git clone https://github.com/Polovichok/cards.git
    cd cards
    go run main.go deck.go
+  ```
+ 
+## Testing with deck_test.go
+```go
+go test 
+```
 
+The project includes a test file named `deck_test.go` that contains test cases for validating the functionality of the card deck manipulation functions. Here's a brief description of the tests included in this file:
+#### TestNewDeck
+
+This test ensures that the `newDeck` function correctly creates a deck of cards. It checks the following conditions:
+- The length of the deck should be 54.
+- The first card should be "Ace of Spades."- The third-to-last card should be "Ten of Clubs."
+- The last card should be "Black and White Joker."
+
+```go
+func TestNewDeck(t *testing.T) {
+    // Test code and assertions...
+}
+```
+#### TestSaveToDeckAndNewDeckFromFile
+This test checks the functionality of saving a deck to a file and then loading it back. It verifies:
+- A file named "_decktesting" is created and removed after the test.
+- The saved deck has 54 cards.
+- The loaded deck is consistent with the original deck
+```go
+func TestSaveToDeckAndNewDeckFromFile(t *testing.T) {
+    // Test code and assertions...
+}
+```
 
